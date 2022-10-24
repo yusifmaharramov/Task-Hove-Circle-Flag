@@ -1,0 +1,43 @@
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    float: left;
+    display: flex;
+    left: 500px;
+    position: absolute;
+}
+
+.flag{
+    position: relative;
+    width: 450px;
+    height: 240px;
+    float: left;
+    display: flex;
+    background-color: green;
+    right: 460px;
+    animation-name: flagg;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.blue{
+    position: absolute;
+    width: 450px;
+    height: 80px;
+    background-color: blue;
+}
+
+.red{
+    position: absolute;
+    width: 450px;
+    height: 80px;
+    background-color: red;
+    top: 80px;
+}
+
+.circle:hover + .flag{
+    transition-duration: 2s;
+    right: 0;
+}
